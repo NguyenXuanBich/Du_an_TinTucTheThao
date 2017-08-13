@@ -1,0 +1,120 @@
+﻿body {
+}
+*{margin: 0px; padding: 0px;}
+#main{width:1335px; margin: auto;}
+ul, li{list-style:none}
+a{text-decoration: none}
+
+/*banner trang web*/
+
+#banner{width: 1050px; min-height: 90px; margin-left: 144px;}
+#banner .logo{float: left; width: 200px; text-align: center; color: red; margin-top: 10px;background-color: white; font-size: 30px; line-height:50px; font-weight: bold;}
+#banner .logo1{float: left; width: 200px; text-align: center; color: red; background-color: white; font-size: 15px; line-height: 5px;}
+#banner .clr{float:left; width:10px;}
+
+/*menu trang web*/
+
+#menu{width:1335px; min-height: 45px; margin-top: 3px;background-color: #0d5d6c;}
+#menu ul{float:left;position:relative;margin-left:40px;}
+#menu ul li{float:left;}
+#menu ul li a{display:block; padding: 15px 15px; color:#fff; font-size:13px; float:left;}
+#menu ul li ul{position:absolute; width:136px; background:#0d5d6c; margin-top: 46px; display:none;}
+#menu ul li ul li{width:100%; font-size: 15px; border-bottom:1px solid white;}
+#menu ul li ul li ul{margin-left:135px; margin-top:0px;}
+#menu ul li:hover > ul{display:block}
+
+/*phần content trang web*/
+
+#content{width: 1050px; min-height: 500px; margin-top: 3px; margin-left: 144px;}
+
+/*phần content bên trái*/
+
+#content .left{float: left; width: 523px;}
+#content .left .left_TinChinh{width: 100px; min-height: 30px; margin-bottom: 2px;border-radius:15px; background-color: #0d5d6c; text-align:center; color: white; line-height: 27px;}
+#content .left .left_NoiDung{width:523px; margin-top: 1px;}
+
+/*phần content bên phải*/
+
+#content .right{float:right; width:523px; min-height:500px;}
+#content .right .right_TinLienQuan{width:260px; float:left; clear:both;}
+#content .right .right_TinLienQuan .tieude_tinlienquan{width: 115px; min-height: 30px; margin-bottom: 2px;border-radius:15px; background-color: #0d5d6c; text-align:center; color: white; line-height: 27px;}
+#content .right .right_TinLienQuan .right_NoiDung{width:259px; margin-top: 1px;}
+#content .right .right_QuangCao{width:259px; margin-left: 4px;float: right;}
+
+/*phần content của tin đọc nhiều*/
+
+#content .left1{float:left; width: 1050px; margin-top: 3px; border-bottom: 1px solid #0d5d6c;}
+#content .left1 ul{list-style-type: disc; list-style-type: none; text-align: center;}
+#content .left1 li{float: left; line-height: 20px;}
+#content .left1 li a{display: block; cursor: auto;}
+
+
+/*phần content bên trái của tin trong loại*/
+
+#content .tintrongloai{width: 550px; float:left;}
+#content .tintrongloai .left2{float:left; width: 550px; margin-top: 3px; border-bottom: 1px solid #0d5d6c;}
+#content .tintrongloai .left2 .tieude_bongdaanh{width: 145px; min-height: 30px; margin-bottom: 2px;border-radius:15px; background-color: #0d5d6c; text-align:center; color: white; line-height: 27px;}
+#content .tintrongloai .left2 .left2_NoiDung{width:550px; margin-top: 1px;}
+#content .clr{clear:both}
+
+#content .tintrongloai .left3{float:left; width: 550px; margin-top: 3px; border-bottom: 1px solid #0d5d6c;}
+#content .tintrongloai .left3 .tieude_bongdavietnam{width: 135px; min-height: 30px; margin-bottom: 2px;border-radius:15px; background-color: #0d5d6c; text-align:center; color: white; line-height: 27px;}
+#content .tintrongloai .left3 .left3_NoiDung{width:550px; margin-top: 1px;}
+
+#content .tintrongloai .left4{float:left; width: 550px; margin-top: 3px; border-bottom: 1px solid #0d5d6c;}
+#content .tintrongloai .left4 .tieude_bongdaquocte{width: 145px; min-height: 30px; margin-bottom: 2px;border-radius:15px; background-color: #0d5d6c; text-align:center; color: white; line-height: 27px;}
+#content .tintrongloai .left4 .left4_NoiDung{width:550px; margin-top: 1px;}
+
+#content .tintrongloai .left5{float:left; width: 550px; margin-top: 3px; border-bottom: 1px solid #0d5d6c;}
+#content .tintrongloai .left5 .tieude_quanvot{width: 145px; min-height: 30px; margin-bottom: 2px;border-radius:15px; background-color: #0d5d6c; text-align:center; color: white; line-height: 27px;}
+#content .tintrongloai .left5 .left5_NoiDung{width:550px; margin-top: 1px;}
+
+#content .tintrongloai .left6{float:left; width: 550px; margin-top: 3px; border-bottom: 1px solid #0d5d6c;}
+#content .tintrongloai .left6 .tieude_bongchuyen{width: 145px; min-height: 30px; margin-bottom: 2px;border-radius:15px; background-color: #0d5d6c; text-align:center; color: white; line-height: 27px;}
+#content .tintrongloai .left6 .left6_NoiDung{width:550px; margin-top: 1px;}
+
+#content .tintrongloai .left7{float:left; width: 550px; margin-top: 3px; border-bottom: 1px solid #0d5d6c;}
+#content .tintrongloai .left7 .tieude_thethao{width: 145px; min-height: 30px; margin-bottom: 2px;border-radius:15px; background-color: #0d5d6c; text-align:center; color: white; line-height: 27px;}
+#content .tintrongloai .left7 .left7_NoiDung{width:550px; margin-top: 1px;}
+
+#content .tintrongloai .left8{float:left; width: 550px; margin-top: 3px; border-bottom: 1px solid #0d5d6c;}
+#content .tintrongloai .left8 .tieude_dulieubongda{width: 145px; min-height: 30px; margin-bottom: 2px;border-radius:15px; background-color: #0d5d6c; text-align:center; color: white; line-height: 27px;}
+#content .tintrongloai .left8 .left8_NoiDung{width:550px; margin-top: 1px;}
+
+#content .tintrongloai .left9{float:left; width: 550px; margin-top: 3px; border-bottom: 1px solid #0d5d6c;}
+#content .tintrongloai .left9 .tieude_hautruong{width: 145px; min-height: 30px; margin-bottom: 2px;border-radius:15px; background-color: #0d5d6c; text-align:center; color: white; line-height: 27px;}
+#content .tintrongloai .left9 .left9_NoiDung{width:550px; margin-top: 1px;}
+
+#content .tintrongloai .left10{float:left; width: 550px; margin-top: 3px; border-bottom: 1px solid #0d5d6c;}
+#content .tintrongloai .left10 .tieude_chuyenthethao{width: 145px; min-height: 30px; margin-bottom: 2px;border-radius:15px; background-color: #0d5d6c; text-align:center; color: white; line-height: 27px;}
+#content .tintrongloai .left10 .left10_NoiDung{width:550px; margin-top: 1px;}
+
+/*thuộc tính cố định*/
+
+.clr{clear:both;}
+
+#content .tintrongloai_right{float:left; width:497px;}
+#content .tintrongloai_right .bongdavietnam{ float:left; width: 200px;}
+
+#content .tintrongloai_right .clr{clear:both;}
+
+#content .tintrongloai_right .ttl{float:right; margin-right: 280px;}
+#content .tintrongloai_right .ttl .bongdaanh{ float:left; width: 200px;}
+#content .tintrongloai_right .ttl .bongquocte{ float:left; width: 200px;}
+#content .tintrongloai_right .ttl .quanvot{ float:left; width: 200px;}
+#content .tintrongloai_right .ttl .bongchuyen{ float:left; width: 200px;}
+#content .tintrongloai_right .ttl .thethao{ float:left; width: 200px;}
+#content .tintrongloai_right .ttl .dulieubongda{ float:left; width: 200px;}
+#content .tintrongloai_right .ttl .hautruong{ float:left; width: 200px;}
+#content .tintrongloai_right .ttl .chuyenthethao{ float:left; width: 200px;}
+
+#content .tintrongloai_right .quangcao{ width:260px; margin-left: 240px; margin-top: 3px;}
+
+/*phần cuối trang web*/
+
+.clr{}
+
+#footer{width: 1050px; min-height: 80px; margin-top: 3px; margin-bottom: 5px; background-color: #000; position:absolute;}
+
+#txtTK{border-radius: 13px;}
+#btnTK{border-radius: 13px;}

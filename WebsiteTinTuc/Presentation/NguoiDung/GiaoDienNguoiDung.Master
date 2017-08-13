@@ -1,0 +1,331 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="GiaoDienNguoiDung.master.cs" Inherits="WebsiteTinTuc.Presentation.NguoiDung.GiaoDienNguoiDung" %>
+
+<%@ Register Src="~/Presentation/NguoiDung/UserControl/TinNoiBat.ascx" TagPrefix="uc1" TagName="TinNoiBat" %>
+<%@ Register Src="~/Presentation/NguoiDung/UserControl/TinMoi.ascx" TagPrefix="uc1" TagName="TinMoi" %>
+<%@ Register Src="~/Presentation/NguoiDung/UserControl/TinXemNhieu.ascx" TagPrefix="uc1" TagName="TinXemNhieu" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Trang chủ</title>
+    <link href="Styles/GiaoDienNguoiDung.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type='text/javascript'>
+        //<![CDATA[
+        var purl = location.href;
+        var fb_href = purl.substring(0, purl.indexOf(".html") + 5);
+        var fbcm = '<div class="fb-comments" data-href="' + fb_href + '" data-num-posts="8" data-width="766"></div>';
+        //]]>
+</script>
+</head>
+<body>
+    <div id='fb-root'/> <script>(function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/vi_VN/all.js#xfbml=1"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
+    <form id="form1" runat="server">
+        <div id="main">
+            <div id="banner">
+                <div class="logo">THỂ THAO</div>
+                <div class="clr"></div>
+                <div class="logo1">
+                    TIN TỨC MỌI NƠI
+                <hr style="border: 1px solid #ff0000; margin-top: 8px; width: 200px;" />
+                </div>
+                <span style="position: absolute; padding: 30px; margin-left: 25px;">
+                    <asp:TextBox ID="txtTK" runat="server" Height="30" Width="300" BackColor="#E0E0E0" BorderStyle="None"></asp:TextBox>
+                    <asp:Button ID="btnTK" runat="server" Text="Search" BorderStyle="None" Height="30" Font-Bold="true" Width="80" BackColor="#E0E0E0" ForeColor="#909090 " OnClick="btnTK_Click" />
+                    <span style="margin-left: 100px;"><a href="/Presentation/NguoiDung/DangNhap.aspx" style="color: #000;">Đăng nhập</a>/<a href="/Presentation/DangKyTaiKhoan.aspx" style="color: #000;">Đăng ký</a></span>
+                </span>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="/Presentation/NguoiDung/TrangChu.aspx">TRANG CHỦ</a></li>
+                    <li><a href="#">BÓNG ĐÁ ANH</a>
+                        <ul>
+                            <li><a href="TinTrongLoai.aspx?MaLoaiTin=LT01">Premier League</a></li>
+                            <li><a href="TinTrongLoai.aspx?MaLoaiTin=LT02">FA Cup</a></li>
+                            <li><a href="TinTrongLoai.aspx?MaLoaiTin=LT03">Đội tuyển Anh</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">BÓNG ĐÁ VIỆT NAM</a>
+                        <ul>
+                            <li><a href="TinTrongLoai.aspx?MaLoaiTin=LT04">V-League</a></li>
+                            <li><a href="TinTrongLoai.aspx?MaLoaiTin=LT05">Tuyển quốc gia</a></li>
+                            <li><a href="TinTrongLoai.aspx?MaLoaiTin=LT06">Bóng đá nữ</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">BÓNG ĐÁ QUỐC TẾ</a>
+                        <ul>
+                            <li><a href="TinTrongLoai.aspx?MaLoaiTin=LT07">Tây Ban Nha</a></li>
+                            <li><a href="TinTrongLoai.aspx?MaLoaiTin=LT08">Đức</a></li>
+                            <li><a href="TinTrongLoai.aspx?MaLoaiTin=LT09">Italia</a></li>
+                            <li><a href="TinTrongLoai.aspx?MaLoaiTin=LT10">Champions League</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">QUẦN VỢT</a>
+                        <ul>
+                            <li><a href="TinTrongLoai.aspx?MaLoaiTin=LT11">Giải đấu</a></li>
+                            <li><a href="TinTrongLoai.aspx?MaLoaiTin=LT12">Gương mặt</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">BÓNG CHUYỀN</a>
+                        <ul>
+                            <li><a href="TinTrongLoai.aspx?MaLoaiTin=LT13">Bóng chuyền</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">THỂ THAO</a>
+                        <ul>
+                            <li><a href="TinTrongLoai.aspx?MaLoaiTin=LT14">Cầu lông</a></li>
+                            <li><a href="TinTrongLoai.aspx?MaLoaiTin=LT15">Đua xe</a></li>
+                            <li><a href="TinTrongLoai.aspx?MaLoaiTin=LT16">Bóng rổ</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">DỮ LIỆU BÓNG ĐÁ</a>
+                        <ul>
+                            <li><a href="TinTrongLoai.aspx?MaLoaiTin=LT17">Ý kiến chuyên gia</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">HẬU TRƯỜNG</a>
+                        <ul>
+                            <li><a href="TinTrongLoai.aspx?MaLoaiTin=LT18">Nhân vật</a></li>
+                            <li><a href="TinTrongLoai.aspx?MaLoaiTin=LT19">Bên lề</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">CHUYỆN THỂ THAO</a>
+                        <ul>
+                            <li><a href="TinTrongLoai.aspx?MaLoaiTin=LT20">Ngôi sao</a></li>
+                            <li><a href="TinTrongLoai.aspx?MaLoaiTin=LT21">Câu chuyện</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <hr style="border: 1px solid #ff0000; margin-top: 3px; width: 1335px; clear: both;" />
+            <div id="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <div class="left">
+                        <div class="left_TinChinh">
+                            Nổi bật
+                        </div>
+                        <hr style="border: 1px solid #ff0000; margin-bottom: 2px; width: 100px; clear: both;" />
+                        <div class="left_NoiDung">
+                            <uc1:TinNoiBat runat="server" ID="TinNoiBat" />
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="right_TinLienQuan">
+                            <div class="tieude_tinlienquan">
+                                Tin mới
+                            </div>
+                            <hr style="border: 1px solid #ff0000; margin-bottom: 2px; width: 115px; clear: both;" />
+                            <div class="right_NoiDung">
+                                <uc1:TinMoi runat="server" ID="TinMoi" />
+                            </div>
+                        </div>
+                        <div class="right_QuangCao">
+                            <img src="Images%20QC/18.gif" style="width:259px; height:490px;"/>
+                        </div>
+                    </div>
+                    <div class="left1">
+                        <uc1:TinXemNhieu runat="server" ID="TinXemNhieu" />
+                    </div>
+                    <div class="tintrongloai">
+                        <div class="left2">
+                            <div class="tieude_bongdaanh">
+                                Bóng đá Việt Nam
+                            </div>
+                            <hr style="border: 1px solid #ff0000; margin-bottom: 2px; width: 145px; clear: both;" />
+                            <div class="left2_NoiDung">
+                                <asp:Repeater runat="server" ID="rpt">
+                                    <ItemTemplate>
+                                        <div style="clear: both">
+                                        </div>
+                                        <img src='/Presentation/NguoiDung/Images/<%# Eval("HinhAnh") %>' style="width: 230px; height: 180px; float: left; margin-right: 10px; margin-bottom: 7px;" />
+                                        <h4><a style="text-decoration: none; color: #000;" href='ChiTietTin.aspx?MaTin=<%# Eval("MaTin") %>'><%# Eval("TieuDe") %></a></h4>
+                                        <p style="padding: 10px;">
+                                            <%#Eval("TomTat") %>
+                                        </p>
+                                        <h4 style="font-size: 10px;"><%#Eval("NgayDang") %></h4>
+                                    </ItemTemplate>
+                                </asp:Repeater>
+                            </div>
+                        </div>
+                        <div class="clr">
+                        </div>
+                        <div class="left3">
+                            <div class="tieude_bongdavietnam">
+                                Bóng đá Anh
+                            </div>
+                            <hr style="border: 1px solid #ff0000; margin-bottom: 2px; width: 145px; clear: both;" />
+                            <asp:Repeater runat="server" ID="Repeater1">
+                                <ItemTemplate>
+                                    <div style="clear: both">
+                                    </div>
+                                    <img src='/Presentation/NguoiDung/Images/<%# Eval("HinhAnh") %>' style="width: 230px; height: 180px; float: left; margin-right: 7px; margin-bottom: 7px;" />
+                                    <h4><a style="text-decoration: none; color: #000;" href='ChiTietTin.aspx?MaTin=<%# Eval("MaTin") %>'><%# Eval("TieuDe") %></a></h4>
+                                    <p style="padding: 10px;">
+                                        <%#Eval("TomTat") %>
+                                    </p>
+                                    <h4 style="font-size: 10px;"><%#Eval("NgayDang") %></h4>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </div>
+                        <div class="clr">
+                        </div>
+                        <div class="left4">
+                            <div class="tieude_bongdaquocte">
+                                Bóng đá quốc tế
+                            </div>
+                            <hr style="border: 1px solid #ff0000; margin-bottom: 2px; width: 145px; clear: both;" />
+                            <asp:Repeater runat="server" ID="Repeater2">
+                                <ItemTemplate>
+                                    <div style="clear: both">
+                                    </div>
+                                    <img src='/Presentation/NguoiDung/Images/<%# Eval("HinhAnh") %>' style="width: 230px; height: 180px; float: left; margin-right: 7px; margin-bottom: 7px;" />
+                                    <h4><a style="text-decoration: none; color: #000;" href='ChiTietTin.aspx?MaTin=<%# Eval("MaTin") %>'><%# Eval("TieuDe") %></a></h4>
+                                    <p style="padding: 10px;">
+                                        <%#Eval("TomTat") %>
+                                    </p>
+                                    <h4 style="font-size: 10px;"><%#Eval("NgayDang") %></h4>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </div>
+                        <div class="clr">
+                        </div>
+                        <div class="left5">
+                            <div class="tieude_quanvot">
+                                Quần vợt
+                            </div>
+                            <hr style="border: 1px solid #ff0000; margin-bottom: 2px; width: 145px; clear: both;" />
+                            <asp:Repeater runat="server" ID="Repeater3">
+                                <ItemTemplate>
+                                    <div style="clear: both">
+                                    </div>
+                                    <img src='/Presentation/NguoiDung/Images/<%# Eval("HinhAnh") %>' style="width: 230px; height: 180px; float: left; margin-right: 7px; margin-bottom: 7px;" />
+                                    <h4><a style="text-decoration: none; color: #000;" href='ChiTietTin.aspx?MaTin=<%# Eval("MaTin") %>'><%# Eval("TieuDe") %></a></h4>
+                                    <p style="padding: 10px;">
+                                        <%#Eval("TomTat") %>
+                                    </p>
+                                    <h4 style="font-size: 10px;"><%#Eval("NgayDang") %></h4>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </div>
+                        <div class="clr">
+                        </div>
+                        <div class="left6">
+                            <div class="tieude_bongchuyen">
+                                Bóng chuyền
+                            </div>
+                            <hr style="border: 1px solid #ff0000; margin-bottom: 2px; width: 145px; clear: both;" />
+                            <asp:Repeater runat="server" ID="Repeater4">
+                                <ItemTemplate>
+                                    <div style="clear: both">
+                                    </div>
+                                    <img src='/Presentation/NguoiDung/Images/<%# Eval("HinhAnh") %>' style="width: 230px; height: 180px; float: left; margin-right: 7px; margin-bottom: 7px;" />
+                                    <h4><a style="text-decoration: none; color: #000;" href='ChiTietTin.aspx?MaTin=<%# Eval("MaTin") %>'><%# Eval("TieuDe") %></a></h4>
+                                    <p style="padding: 10px;">
+                                        <%#Eval("TomTat") %>
+                                    </p>
+                                    <h4 style="font-size: 10px;"><%#Eval("NgayDang") %></h4>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </div>
+                        <div class="clr">
+                        </div>
+                        <div class="left7">
+                            <div class="tieude_thethao">
+                                Thể thao
+                            </div>
+                            <hr style="border: 1px solid #ff0000; margin-bottom: 2px; width: 145px; clear: both;" />
+                            <asp:Repeater runat="server" ID="Repeater5">
+                                <ItemTemplate>
+                                    <div style="clear: both">
+                                    </div>
+                                    <img src='/Presentation/NguoiDung/Images/<%# Eval("HinhAnh") %>' style="width: 230px; height: 180px; float: left; margin-right: 7px; margin-bottom: 7px;" />
+                                    <h4><a style="text-decoration: none; color: #000;" href='ChiTietTin.aspx?MaTin=<%# Eval("MaTin") %>'><%# Eval("TieuDe") %></a></h4>
+                                    <p style="padding: 10px;">
+                                        <%#Eval("TomTat") %>
+                                    </p>
+                                    <h4 style="font-size: 10px;"><%#Eval("NgayDang") %></h4>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </div>
+                        <div class="clr">
+                        </div>
+                        <div class="left8">
+                            <div class="tieude_dulieubongda">
+                                Dữ liệu bóng đá
+                            </div>
+                            <hr style="border: 1px solid #ff0000; margin-bottom: 2px; width: 145px; clear: both;" />
+                            <asp:Repeater runat="server" ID="Repeater6">
+                                <ItemTemplate>
+                                    <div style="clear: both">
+                                    </div>
+                                    <img src='/Presentation/NguoiDung/Images/<%# Eval("HinhAnh") %>' style="width: 230px; height: 180px; float: left; margin-right: 7px; margin-bottom: 7px;" />
+                                    <h4><a style="text-decoration: none; color: #000;" href='ChiTietTin.aspx?MaTin=<%# Eval("MaTin") %>'><%# Eval("TieuDe") %></a></h4>
+                                    <p style="padding: 10px;">
+                                        <%#Eval("TomTat") %>
+                                    </p>
+                                    <h4 style="font-size: 10px;"><%#Eval("NgayDang") %></h4>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </div>
+                        <div class="clr">
+                        </div>
+                        <div class="left9">
+                            <div class="tieude_hautruong">
+                                Hậu trường
+                            </div>
+                            <hr style="border: 1px solid #ff0000; margin-bottom: 2px; width: 145px; clear: both;" />
+                            <asp:Repeater runat="server" ID="Repeater7">
+                                <ItemTemplate>
+                                    <div style="clear: both">
+                                    </div>
+                                    <img src='/Presentation/NguoiDung/Images/<%# Eval("HinhAnh") %>' style="width: 230px; height: 180px; float: left; margin-right: 7px; margin-bottom: 7px;" />
+                                    <h4><a style="text-decoration: none; color: #000;" href='ChiTietTin.aspx?MaTin=<%# Eval("MaTin") %>'><%# Eval("TieuDe") %></a></h4>
+                                    <p style="padding: 10px;">
+                                        <%#Eval("TomTat") %>
+                                    </p>
+                                    <h4 style="font-size: 10px;"><%#Eval("NgayDang") %></h4>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </div>
+                        <div class="clr">
+                        </div>
+                        <div class="left10">
+                            <div class="tieude_chuyenthethao">
+                                Chuyện thể thao
+                            </div>
+                            <hr style="border: 1px solid #ff0000; margin-bottom: 2px; width: 145px; clear: both;" />
+                            <asp:Repeater runat="server" ID="Repeater8">
+                                <ItemTemplate>
+                                    <div style="clear: both">
+                                    </div>
+                                    <img src='/Presentation/NguoiDung/Images/<%# Eval("HinhAnh") %>' style="width: 230px; height: 180px; float: left; margin-right: 7px; margin-bottom: 7px;" />
+                                    <h4><a style="text-decoration: none; color: #000;" href='ChiTietTin.aspx?MaTin=<%# Eval("MaTin") %>'><%# Eval("TieuDe") %></a></h4>
+                                    <p style="padding: 10px;">
+                                        <%#Eval("TomTat") %>
+                                    </p>
+                                    <h4 style="font-size: 10px;"><%#Eval("NgayDang") %></h4>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </div>
+                    </div>
+                    <div class="tintrongloai_right">
+                        <div class="bongdavietnam">
+                            <asp:Repeater runat="server" ID="Repeater9">
+                                <ItemTemplate>
+                                    <div style="clear: both">
+                                    </div>
+                                    <ul><h4><a style="text-decoration: none; color: #000;" href='ChiTietTin.aspx?MaTin=<%# Eval("MaTin") %>'><%# Eval("TieuDe") %></a></h4></ul>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </div>
+
+                    </div>
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

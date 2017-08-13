@@ -1,0 +1,32 @@
+D:\Chuyên ngành\Do an 04\WebsiteTinTuc\WebsiteTinTuc\bin\WebsiteTinTuc.dll.config
+D:\Chuyên ngành\Do an 04\WebsiteTinTuc\WebsiteTinTuc\bin\WebsiteTinTuc.dll
+D:\Chuyên ngành\Do an 04\WebsiteTinTuc\WebsiteTinTuc\bin\WebsiteTinTuc.pdb
+D:\Chuyên ngành\Do an 04\WebsiteTinTuc\WebsiteTinTuc\obj\Debug\WebsiteTinTuc.csprojResolveAssemblyReference.cache
+D:\Chuyên ngành\Do an 04\WebsiteTinTuc\WebsiteTinTuc\obj\Debug\WebsiteTinTuc.dll
+D:\Chuyên ngành\Do an 04\WebsiteTinTuc\WebsiteTinTuc\obj\Debug\WebsiteTinTuc.pdb
+D:\Chuyên ngành\Do an 04\WebsiteTinTuc\WebsiteTinTuc\bin\CKFinder.dll
+D:\Chuyên ngành\Do an 04\WebsiteTinTuc\WebsiteTinTuc\bin\CKFinder.pdb
+D:\Đại học 2013-2017\Do an 04\WebsiteTinTuc\WebsiteTinTuc\bin\WebsiteTinTuc.dll.config
+D:\Đại học 2013-2017\Do an 04\WebsiteTinTuc\WebsiteTinTuc\bin\WebsiteTinTuc.dll
+D:\Đại học 2013-2017\Do an 04\WebsiteTinTuc\WebsiteTinTuc\bin\WebsiteTinTuc.pdb
+D:\Đại học 2013-2017\Do an 04\WebsiteTinTuc\WebsiteTinTuc\bin\CKFinder.dll
+D:\Đại học 2013-2017\Do an 04\WebsiteTinTuc\WebsiteTinTuc\bin\CKFinder.pdb
+D:\Đại học 2013-2017\Do an 04\WebsiteTinTuc\WebsiteTinTuc\obj\Debug\WebsiteTinTuc.dll
+D:\Đại học 2013-2017\Do an 04\WebsiteTinTuc\WebsiteTinTuc\obj\Debug\WebsiteTinTuc.pdb
+D:\Đại học 2013-2017\Do an 04\WebsiteTinTuc\WebsiteTinTuc\obj\Debug\WebsiteTinTuc.csprojResolveAssemblyReference.cache
+E:\Documents\Năm 4\WebsiteTinTuc\WebsiteTinTuc\WebsiteTinTuc\bin\WebsiteTinTuc.dll.config
+E:\Documents\Năm 4\WebsiteTinTuc\WebsiteTinTuc\WebsiteTinTuc\bin\WebsiteTinTuc.dll
+E:\Documents\Năm 4\WebsiteTinTuc\WebsiteTinTuc\WebsiteTinTuc\bin\WebsiteTinTuc.pdb
+E:\Documents\Năm 4\WebsiteTinTuc\WebsiteTinTuc\WebsiteTinTuc\bin\CKFinder.dll
+E:\Documents\Năm 4\WebsiteTinTuc\WebsiteTinTuc\WebsiteTinTuc\bin\CKFinder.pdb
+E:\Documents\Năm 4\WebsiteTinTuc\WebsiteTinTuc\WebsiteTinTuc\obj\Debug\WebsiteTinTuc.dll
+E:\Documents\Năm 4\WebsiteTinTuc\WebsiteTinTuc\WebsiteTinTuc\obj\Debug\WebsiteTinTuc.pdb
+E:\Documents\Năm 4\WebsiteTinTuc\WebsiteTinTuc\WebsiteTinTuc\obj\Debug\WebsiteTinTuc.csprojResolveAssemblyReference.cache
+E:\Documents\Năm 4\Đồ án tốt nghiệp\Tham khảo\WebsiteTinTuc\WebsiteTinTuc\WebsiteTinTuc\bin\WebsiteTinTuc.dll.config
+E:\Documents\Năm 4\Đồ án tốt nghiệp\Tham khảo\WebsiteTinTuc\WebsiteTinTuc\WebsiteTinTuc\bin\WebsiteTinTuc.dll
+E:\Documents\Năm 4\Đồ án tốt nghiệp\Tham khảo\WebsiteTinTuc\WebsiteTinTuc\WebsiteTinTuc\bin\WebsiteTinTuc.pdb
+E:\Documents\Năm 4\Đồ án tốt nghiệp\Tham khảo\WebsiteTinTuc\WebsiteTinTuc\WebsiteTinTuc\bin\CKFinder.dll
+E:\Documents\Năm 4\Đồ án tốt nghiệp\Tham khảo\WebsiteTinTuc\WebsiteTinTuc\WebsiteTinTuc\bin\CKFinder.pdb
+E:\Documents\Năm 4\Đồ án tốt nghiệp\Tham khảo\WebsiteTinTuc\WebsiteTinTuc\WebsiteTinTuc\obj\Debug\WebsiteTinTuc.csprojResolveAssemblyReference.cache
+E:\Documents\Năm 4\Đồ án tốt nghiệp\Tham khảo\WebsiteTinTuc\WebsiteTinTuc\WebsiteTinTuc\obj\Debug\WebsiteTinTuc.dll
+E:\Documents\Năm 4\Đồ án tốt nghiệp\Tham khảo\WebsiteTinTuc\WebsiteTinTuc\WebsiteTinTuc\obj\Debug\WebsiteTinTuc.pdb

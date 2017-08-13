@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="GiaoDienQuanTri.master.cs" Inherits="WebsiteTinTuc.Presentation.QuanTriWebsite.GiaoDienQuanTri" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Trang quản trị</title>
+    <link href="Styles/GiaoDienQuanTri.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="main">
+        <div id="banner">
+            <div class="logo">
+               HỆ THỐNG QUẢN TRỊ WEBSITE TIN TỨC
+            </div>
+        </div>
+        <div id="left">
+            <ul>
+                <li><a href="GiaoDienQuanTri.aspx">Trang chủ</a></li>
+                <li><a href="QLTheLoai.aspx">Quản lý thể loại</a></li>
+                <li><a href="QLLoaiTin.aspx">Quản lý loại tin</a></li>
+                <li><a href="QuanLyTin.aspx">Quản lý tin</a></li>
+                <li><a href="QLBinhLuan.aspx">Quản lý bình luận</a></li>
+                <li><a href="QLNguoiDung.aspx">Quản lý người dùng</a></li>
+                <li><a href="QLQuangCao.aspx">Quản lý quảng cáo</a></li>
+            </ul>
+        </div>
+        <div id="right">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+             <img src="Images/right.jpg" style="width: 1080px; min-height: 797px; margin-left: 3px;"/>
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
